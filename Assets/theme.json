@@ -1,0 +1,546 @@
+[
+  {
+    "number": 1,
+    "name": "Pasta",
+    "bundleID": "local.pasta.app",
+    "path": "/Applications/Pasta.app",
+    "direct": true,
+    "icon": "Icons/01.icns"
+  },
+  {
+    "number": 3,
+    "name": "Codex",
+    "bundleID": "com.openai.codex",
+    "path": "/Applications/ChatGPT.app",
+    "direct": true,
+    "icon": "Icons/03.icns"
+  },
+  {
+    "number": 4,
+    "name": "DeepSeek",
+    "bundleID": "com.deepseek.dsh",
+    "path": "/Applications/DeepSeek Harness.app",
+    "direct": true,
+    "icon": "Icons/04.icns"
+  },
+  {
+    "number": 5,
+    "name": "WeChat",
+    "bundleID": "com.tencent.xinWeChat",
+    "path": "/Applications/WeChat.app",
+    "direct": true,
+    "icon": "Icons/05.icns"
+  },
+  {
+    "number": 6,
+    "name": "bilibili",
+    "bundleID": "com.apple.Safari.WebApp.A1FB629A-466D-4B04-B0A1-5EB8751E1A97",
+    "path": "~/Applications/bilibili.app",
+    "direct": true,
+    "icon": "Icons/06.icns"
+  },
+  {
+    "number": 7,
+    "name": "Finder",
+    "bundleID": "com.apple.finder",
+    "path": "/System/Library/CoreServices/Finder.app",
+    "direct": false,
+    "icon": "Icons/07.icns"
+  },
+  {
+    "number": 8,
+    "name": "Safari",
+    "bundleID": "com.apple.Safari",
+    "path": "/Applications/Safari.app",
+    "direct": false,
+    "icon": "Icons/08.icns"
+  },
+  {
+    "number": 9,
+    "name": "Mail",
+    "bundleID": "com.apple.mail",
+    "path": "/System/Applications/Mail.app",
+    "direct": false,
+    "icon": "Icons/09.icns"
+  },
+  {
+    "number": 10,
+    "name": "Messages",
+    "bundleID": "com.apple.MobileSMS",
+    "path": "/System/Applications/Messages.app",
+    "direct": false,
+    "icon": "Icons/10.icns"
+  },
+  {
+    "number": 11,
+    "name": "FaceTime",
+    "bundleID": "com.apple.FaceTime",
+    "path": "/System/Applications/FaceTime.app",
+    "direct": false,
+    "icon": "Icons/11.icns"
+  },
+  {
+    "number": 12,
+    "name": "App Store",
+    "bundleID": "com.apple.AppStore",
+    "path": "/System/Applications/App Store.app",
+    "direct": false,
+    "icon": "Icons/12.icns"
+  },
+  {
+    "number": 13,
+    "name": "Calendar",
+    "bundleID": "com.apple.iCal",
+    "path": "/System/Applications/Calendar.app",
+    "direct": false,
+    "icon": "Icons/13.icns"
+  },
+  {
+    "number": 14,
+    "name": "Reminders",
+    "bundleID": "com.apple.reminders",
+    "path": "/System/Applications/Reminders.app",
+    "direct": false,
+    "icon": "Icons/14.icns"
+  },
+  {
+    "number": 15,
+    "name": "Notes",
+    "bundleID": "com.apple.Notes",
+    "path": "/System/Applications/Notes.app",
+    "direct": false,
+    "icon": "Icons/15.icns"
+  },
+  {
+    "number": 16,
+    "name": "Contacts",
+    "bundleID": "com.apple.AddressBook",
+    "path": "/System/Applications/Contacts.app",
+    "direct": false,
+    "icon": "Icons/16.icns"
+  },
+  {
+    "number": 17,
+    "name": "Clock",
+    "bundleID": "com.apple.clock",
+    "path": "/System/Applications/Clock.app",
+    "direct": false,
+    "icon": "Icons/17.icns"
+  },
+  {
+    "number": 18,
+    "name": "Calculator",
+    "bundleID": "com.apple.calculator",
+    "path": "/System/Applications/Calculator.app",
+    "direct": false,
+    "icon": "Icons/18.icns"
+  },
+  {
+    "number": 19,
+    "name": "Weather",
+    "bundleID": "com.apple.weather",
+    "path": "/System/Applications/Weather.app",
+    "direct": false,
+    "icon": "Icons/19.icns"
+  },
+  {
+    "number": 20,
+    "name": "Maps",
+    "bundleID": "com.apple.Maps",
+    "path": "/System/Applications/Maps.app",
+    "direct": false,
+    "icon": "Icons/20.icns"
+  },
+  {
+    "number": 21,
+    "name": "Find My",
+    "bundleID": "com.apple.findmy",
+    "path": "/System/Applications/FindMy.app",
+    "direct": false,
+    "icon": "Icons/21.icns"
+  },
+  {
+    "number": 22,
+    "name": "Home",
+    "bundleID": "com.apple.Home",
+    "path": "/System/Applications/Home.app",
+    "direct": false,
+    "icon": "Icons/22.icns"
+  },
+  {
+    "number": 23,
+    "name": "Passwords",
+    "bundleID": "com.apple.Passwords",
+    "path": "/System/Applications/Passwords.app",
+    "direct": false,
+    "icon": "Icons/23.icns"
+  },
+  {
+    "number": 24,
+    "name": "Shortcuts",
+    "bundleID": "com.apple.shortcuts",
+    "path": "/System/Applications/Shortcuts.app",
+    "direct": false,
+    "icon": "Icons/24.icns"
+  },
+  {
+    "number": 25,
+    "name": "Photos",
+    "bundleID": "com.apple.Photos",
+    "path": "/System/Applications/Photos.app",
+    "direct": false,
+    "icon": "Icons/25.icns"
+  },
+  {
+    "number": 26,
+    "name": "Preview",
+    "bundleID": "com.apple.Preview",
+    "path": "/System/Applications/Preview.app",
+    "direct": false,
+    "icon": "Icons/26.icns"
+  },
+  {
+    "number": 27,
+    "name": "Photo Booth",
+    "bundleID": "com.apple.PhotoBooth",
+    "path": "/System/Applications/Photo Booth.app",
+    "direct": false,
+    "icon": "Icons/27.icns"
+  },
+  {
+    "number": 28,
+    "name": "Music",
+    "bundleID": "com.apple.Music",
+    "path": "/System/Applications/Music.app",
+    "direct": false,
+    "icon": "Icons/28.icns"
+  },
+  {
+    "number": 29,
+    "name": "Podcasts",
+    "bundleID": "com.apple.podcasts",
+    "path": "/System/Applications/Podcasts.app",
+    "direct": false,
+    "icon": "Icons/29.icns"
+  },
+  {
+    "number": 30,
+    "name": "TV",
+    "bundleID": "com.apple.TV",
+    "path": "/System/Applications/TV.app",
+    "direct": false,
+    "icon": "Icons/30.icns"
+  },
+  {
+    "number": 31,
+    "name": "QuickTime",
+    "bundleID": "com.apple.QuickTimePlayerX",
+    "path": "/System/Applications/QuickTime Player.app",
+    "direct": false,
+    "icon": "Icons/31.icns"
+  },
+  {
+    "number": 32,
+    "name": "Voice Memos",
+    "bundleID": "com.apple.VoiceMemos",
+    "path": "/System/Applications/VoiceMemos.app",
+    "direct": false,
+    "icon": "Icons/32.icns"
+  },
+  {
+    "number": 33,
+    "name": "Books",
+    "bundleID": "com.apple.iBooksX",
+    "path": "/System/Applications/Books.app",
+    "direct": false,
+    "icon": "Icons/33.icns"
+  },
+  {
+    "number": 34,
+    "name": "News",
+    "bundleID": "com.apple.news",
+    "path": "/System/Applications/News.app",
+    "direct": false,
+    "icon": "Icons/34.icns"
+  },
+  {
+    "number": 35,
+    "name": "Freeform",
+    "bundleID": "com.apple.freeform",
+    "path": "/System/Applications/Freeform.app",
+    "direct": false,
+    "icon": "Icons/35.icns"
+  },
+  {
+    "number": 36,
+    "name": "Image Playground",
+    "bundleID": "com.apple.GenerativePlaygroundApp",
+    "path": "/System/Applications/Image Playground.app",
+    "direct": false,
+    "icon": "Icons/36.icns"
+  },
+  {
+    "number": 37,
+    "name": "System Settings",
+    "bundleID": "com.apple.systempreferences",
+    "path": "/System/Applications/System Settings.app",
+    "direct": false,
+    "icon": "Icons/37.icns"
+  },
+  {
+    "number": 38,
+    "name": "Terminal",
+    "bundleID": "com.apple.Terminal",
+    "path": "/System/Applications/Utilities/Terminal.app",
+    "direct": false,
+    "icon": "Icons/38.icns"
+  },
+  {
+    "number": 39,
+    "name": "TextEdit",
+    "bundleID": "com.apple.TextEdit",
+    "path": "/System/Applications/TextEdit.app",
+    "direct": false,
+    "icon": "Icons/39.icns"
+  },
+  {
+    "number": 40,
+    "name": "Dictionary",
+    "bundleID": "com.apple.Dictionary",
+    "path": "/System/Applications/Dictionary.app",
+    "direct": false,
+    "icon": "Icons/40.icns"
+  },
+  {
+    "number": 41,
+    "name": "Font Book",
+    "bundleID": "com.apple.FontBook",
+    "path": "/System/Applications/Font Book.app",
+    "direct": false,
+    "icon": "Icons/41.icns"
+  },
+  {
+    "number": 42,
+    "name": "Stickies",
+    "bundleID": "com.apple.Stickies",
+    "path": "/System/Applications/Stickies.app",
+    "direct": false,
+    "icon": "Icons/42.icns"
+  },
+  {
+    "number": 43,
+    "name": "Automator",
+    "bundleID": "com.apple.Automator",
+    "path": "/System/Applications/Automator.app",
+    "direct": false,
+    "icon": "Icons/43.icns"
+  },
+  {
+    "number": 44,
+    "name": "Script Editor",
+    "bundleID": "com.apple.ScriptEditor2",
+    "path": "/System/Applications/Utilities/Script Editor.app",
+    "direct": false,
+    "icon": "Icons/44.icns"
+  },
+  {
+    "number": 45,
+    "name": "Mission Control",
+    "bundleID": "com.apple.exposelauncher",
+    "path": "/System/Applications/Mission Control.app",
+    "direct": false,
+    "icon": "Icons/45.icns"
+  },
+  {
+    "number": 46,
+    "name": "Launchpad",
+    "bundleID": "com.apple.launchpad.launcher",
+    "path": "/System/Applications/Launchpad.app",
+    "direct": false,
+    "icon": "Icons/46.icns"
+  },
+  {
+    "number": 47,
+    "name": "Siri",
+    "bundleID": "com.apple.siri.launcher",
+    "path": "/System/Applications/Siri.app",
+    "direct": false,
+    "icon": "Icons/47.icns"
+  },
+  {
+    "number": 48,
+    "name": "Screenshot",
+    "bundleID": "com.apple.screenshot.launcher",
+    "path": "/System/Applications/Utilities/Screenshot.app",
+    "direct": false,
+    "icon": "Icons/48.icns"
+  },
+  {
+    "number": 49,
+    "name": "Activity Monitor",
+    "bundleID": "com.apple.ActivityMonitor",
+    "path": "/System/Applications/Utilities/Activity Monitor.app",
+    "direct": false,
+    "icon": "Icons/49.icns"
+  },
+  {
+    "number": 50,
+    "name": "Disk Utility",
+    "bundleID": "com.apple.DiskUtility",
+    "path": "/System/Applications/Utilities/Disk Utility.app",
+    "direct": false,
+    "icon": "Icons/50.icns"
+  },
+  {
+    "number": 51,
+    "name": "Console",
+    "bundleID": "com.apple.Console",
+    "path": "/System/Applications/Utilities/Console.app",
+    "direct": false,
+    "icon": "Icons/51.icns"
+  },
+  {
+    "number": 52,
+    "name": "System Information",
+    "bundleID": "com.apple.SystemProfiler",
+    "path": "/System/Applications/Utilities/System Information.app",
+    "direct": false,
+    "icon": "Icons/52.icns"
+  },
+  {
+    "number": 53,
+    "name": "Time Machine",
+    "bundleID": "com.apple.backup.launcher",
+    "path": "/System/Applications/Time Machine.app",
+    "direct": false,
+    "icon": "Icons/53.icns"
+  },
+  {
+    "number": 54,
+    "name": "Migration Assistant",
+    "bundleID": "com.apple.MigrateAssistant",
+    "path": "/System/Applications/Utilities/Migration Assistant.app",
+    "direct": false,
+    "icon": "Icons/54.icns"
+  },
+  {
+    "number": 55,
+    "name": "Screen Sharing",
+    "bundleID": "com.apple.ScreenSharing",
+    "path": "/System/Applications/Utilities/Screen Sharing.app",
+    "direct": false,
+    "icon": "Icons/55.icns"
+  },
+  {
+    "number": 56,
+    "name": "iPhone Mirroring",
+    "bundleID": "com.apple.ScreenContinuity",
+    "path": "/System/Applications/iPhone Mirroring.app",
+    "direct": false,
+    "icon": "Icons/56.icns"
+  },
+  {
+    "number": 57,
+    "name": "Print Center",
+    "bundleID": "com.apple.printcenter",
+    "path": "/System/Applications/Utilities/Print Center.app",
+    "direct": false,
+    "icon": "Icons/57.icns"
+  },
+  {
+    "number": 58,
+    "name": "Image Capture",
+    "bundleID": "com.apple.Image_Capture",
+    "path": "/System/Applications/Image Capture.app",
+    "direct": false,
+    "icon": "Icons/58.icns"
+  },
+  {
+    "number": 59,
+    "name": "Audio MIDI Setup",
+    "bundleID": "com.apple.audio.AudioMIDISetup",
+    "path": "/System/Applications/Utilities/Audio MIDI Setup.app",
+    "direct": false,
+    "icon": "Icons/59.icns"
+  },
+  {
+    "number": 60,
+    "name": "Bluetooth File Exchange",
+    "bundleID": "com.apple.BluetoothFileExchange",
+    "path": "/System/Applications/Utilities/Bluetooth File Exchange.app",
+    "direct": false,
+    "icon": "Icons/60.icns"
+  },
+  {
+    "number": 61,
+    "name": "Chess",
+    "bundleID": "com.apple.Chess",
+    "path": "/System/Applications/Chess.app",
+    "direct": false,
+    "icon": "Icons/61.icns"
+  },
+  {
+    "number": 62,
+    "name": "Stocks",
+    "bundleID": "com.apple.stocks",
+    "path": "/System/Applications/Stocks.app",
+    "direct": false,
+    "icon": "Icons/62.icns"
+  },
+  {
+    "number": 63,
+    "name": "Tips",
+    "bundleID": "com.apple.helpviewer",
+    "path": "/System/Applications/Tips.app",
+    "direct": false,
+    "icon": "Icons/63.icns"
+  },
+  {
+    "number": 64,
+    "name": "AirPort Utility",
+    "bundleID": "com.apple.airport.airportutility",
+    "path": "/System/Applications/Utilities/AirPort Utility.app",
+    "direct": false,
+    "icon": "Icons/64.icns"
+  },
+  {
+    "number": 65,
+    "name": "Boot Camp Assistant",
+    "bundleID": "com.apple.bootcampassistant",
+    "path": "/System/Applications/Utilities/Boot Camp Assistant.app",
+    "direct": false,
+    "icon": "Icons/65.icns"
+  },
+  {
+    "number": 66,
+    "name": "ColorSync Utility",
+    "bundleID": "com.apple.ColorSyncUtility",
+    "path": "/System/Applications/Utilities/ColorSync Utility.app",
+    "direct": false,
+    "icon": "Icons/66.icns"
+  },
+  {
+    "number": 67,
+    "name": "Digital Color Meter",
+    "bundleID": "com.apple.DigitalColorMeter",
+    "path": "/System/Applications/Utilities/Digital Color Meter.app",
+    "direct": false,
+    "icon": "Icons/67.icns"
+  },
+  {
+    "number": 68,
+    "name": "Grapher",
+    "bundleID": "com.apple.grapher",
+    "path": "/System/Applications/Utilities/Grapher.app",
+    "direct": false,
+    "icon": "Icons/68.icns"
+  },
+  {
+    "number": 69,
+    "name": "VoiceOver Utility",
+    "bundleID": "com.apple.VoiceOverUtility",
+    "path": "/System/Applications/Utilities/VoiceOver Utility.app",
+    "direct": false,
+    "icon": "Icons/69.icns"
+  }
+]
