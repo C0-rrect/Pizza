@@ -1,63 +1,72 @@
-# Pizza Icons
+<div align="center">
+  <img src="Assets/AppIcon.png" width="112" alt="Pizza Icons 应用图标">
 
-<img src="Assets/AppIcon.png" width="128" alt="Pizza 图标">
+  <h1>Pizza Icons</h1>
+  <p><strong>给 Mac 桌面换一套像素图标。</strong><br>
+  预览、搭配和切换主题，也可以一起换上像素 Dock。</p>
 
-为 macOS 切换像素图标主题，并提供一条可调整大小的像素 Dock。
+  <p><kbd>macOS 15+</kbd> &nbsp; <kbd>Apple Silicon</kbd> &nbsp; <kbd>0.7 build 17 · 实验版</kbd></p>
+  <p><a href="https://github.com/C0-rrect/Pizza/releases/download/v0.7-build17/Pizza-0.7-build17-macOS-arm64.zip"><strong>下载 Pizza</strong></a> · <a href="#安装">安装</a> · <a href="#使用">使用</a> · <a href="https://github.com/C0-rrect/Pizza/releases/tag/v0.7-build17">版本说明</a></p>
+</div>
 
-**状态：实验版，0.7 build 17。存在已确认的问题：三指上滑进入原版调度中心后，Pizza Dock 会消失；普通桌面中可见。此问题尚未解决。** 本项目不承诺完整复现原版 Dock，也不是面向所有 Mac 的稳定发行版。
+<p align="center">
+  <img src="docs/screenshots/workbench.png" width="960" alt="Pizza 图标工作台：左侧选择主题，中间浏览像素图标，右侧对照当前和主题图标">
+  <br><sub>图标工作台 · 先比较外观，再应用主题。</sub>
+</p>
 
 ## 功能
 
-- 主题预览、图标导入和主题导出；内置一套 68 个应用的像素图标。
-- 一个开关切换应用图标与像素 Dock；保留一份原图恢复点。
-- 固定应用、拖动排序、右键显示/隐藏/退出，以及文件夹入口。
-- 拖动分隔线调整整条 Dock 的大小。
-- 可选窗口列表、最小化/恢复/关闭，以及本机窗口缩略图。
-- 像素 Finder、日历、时钟和废纸篓图标。
+| 功能 | 用法 |
+| --- | --- |
+| **像素主题** | 内置 68 个应用的像素图标。可以为单个应用导入图片，也可以导入或导出整套主题。 |
+| **自定义 Dock** | 固定应用和文件夹、拖动排序，拖住分隔线调整大小。Finder、日历、时钟和废纸篓也有像素图标。 |
+| **窗口管理** | 通过 Dock 菜单显示、隐藏或退出应用。授予辅助功能权限后可操作应用窗口；窗口缩略图另需屏幕录制权限。 |
+| **恢复原样** | 首次替换时保留原图恢复点，之后切换主题会复用它。关闭主题可恢复原图标和系统 Dock。 |
 
-## 运行与构建
+<p align="center">
+  <img src="docs/screenshots/pixel-dock.png" width="800" alt="Pizza 像素 Dock：应用图标、运行指示点、下载文件夹和废纸篓">
+  <br><sub>像素 Dock · 示例布局，实际应用和顺序可自行调整。</sub>
+</p>
 
-目前仅在 **Apple Silicon、macOS 15.8.2** 上验证；最低构建目标是 macOS 15.0。
-需要 Apple Command Line Tools 与 Python 3：
+## 安装
+
+需要 **Apple Silicon Mac 和 macOS 15 或以上**。此版本在 macOS 15.8.2 上验证。
+
+1. [下载 ZIP 安装包](https://github.com/C0-rrect/Pizza/releases/download/v0.7-build17/Pizza-0.7-build17-macOS-arm64.zip)，解压。
+2. 把 **Pizza Icons.app** 拖到「应用程序」，再从 Finder 或启动台打开。
+3. 下载包使用本机临时代码签名，未经过 Apple 公证。如果 macOS 阻止启动，可以按下文从源码构建。
+
+[发布页与 SHA-256 校验文件](https://github.com/C0-rrect/Pizza/releases/tag/v0.7-build17)
+
+## 使用
+
+1. **选主题与应用。** 在左侧选择 `Pizza Pixel`，勾选要更换的应用。用「主题 / 当前」切换预览，或在右侧导入自己的图标。
+2. **开启像素风。** 点击右下角的「像素风」开关，核对应用列表后确认。写入图标时可能出现 macOS 管理员验证。
+3. **调整 Dock。** 拖住分隔线上下移动来缩放；右键打开应用菜单，或把应用拖入 Dock 固定。
+4. **恢复原样。** 再点一次「像素风」开关。只退出 Pizza 会恢复系统 Dock，应用图标会保留当前主题。
+
+原图恢复点位于 `~/Library/Application Support/Pizza Icons/Backups/Originals`。恢复原图前请保留它。
+
+## 兼容性
+
+> [!NOTE]
+> **这是实验版。** 在普通桌面可以看到像素 Dock；三指上滑进入原版调度中心后，像素 Dock 会消失。这个问题尚未解决。
+
+Pizza 保留 SIP，使用 macOS 未公开的图标缓存和窗口接口，系统更新可能影响兼容性。系统 Dock 的隐藏与大小等设置在主题启用期间会临时调整。窗口缩略图只在本机内存中使用。
+
+<details>
+<summary><strong>从源码构建与验证</strong></summary>
+
+安装 Apple Command Line Tools 与 Python 3，克隆后运行：
 
 ```sh
-xcode-select --install
+git clone https://github.com/C0-rrect/Pizza.git
+cd Pizza
 python3 build.py
 ```
 
-输出为 `dist/Pizza Icons.app`。构建使用本机临时代码签名，未经过 Developer ID 公证。
-可下载的应用压缩包放在本仓库 **Releases**，标记为预发布版本；它与已公布的源码版本对应。
+输出为 `dist/Pizza Icons.app`。运行 `python3 Tests/check_dock.py` 可用模拟偏好设置检查 Dock 设置的恢复和回滚。
 
-仓库包含全部运行源码和已生成的图标资源，不依赖原开发电脑、相邻项目或运行时备份。
+图标、商标及参考资料见 [NOTICE.md](NOTICE.md)。
 
-## 使用与恢复
-
-打开应用，选择主题和应用，再使用主题总开关。图标写入可能触发系统管理员验证。
-关闭总开关恢复原图标和原 Dock 设置；关闭编辑窗口后像素 Dock 继续运行。
-**退出 Pizza 只恢复系统 Dock，应用图标仍保留当前主题**；如需完整恢复，请先关闭主题。
-
-运行数据位于 `~/Library/Application Support/Pizza Icons`。
-原图恢复点是其中的 `Backups/Originals`；切换主题复用它，新应用可能补充数据。
-不要在主题开启时删除这个数据目录。
-
-窗口管理需要辅助功能权限；窗口缩略图另需屏幕录制权限。缩略图只在本机内存中使用，不采集音频。
-源码重编译后，macOS 可能要求重新授权当前应用。
-
-## 已知限制
-
-- 调度中心里的像素 Dock 消失问题未解决，窗口层级日志不能替代实际画面验证。
-- 使用未公开的 macOS 图标缓存和窗口接口，系统更新可能使功能失效。
-- 不关闭 SIP，不修改系统应用包，不安装持久管理员服务；启用时临时改变系统 Dock 的隐藏、大小等设置，退出后尝试恢复。
-- 尚未实现原版 Dock 的屏幕工作区预留、应用专属菜单、空间分配、废纸篓空满状态和拖出移除。
-- 清空废纸篓会再次确认；没有对真实用户废纸篓进行破坏性测试。
-
-## 验证
-
-```sh
-python3 Tests/check_dock.py
-```
-
-此测试使用模拟偏好设置，验证原 Dock 设置恢复、用户修改保留、失败启动回滚等行为，不操作真实 Dock。
-历史版本另做过 32 项隔离交互检查；这不代表上述调度中心问题已经修复。
-
-图标、商标和接口参考的说明见 [NOTICE.md](NOTICE.md)。
+</details>
